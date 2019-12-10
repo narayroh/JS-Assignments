@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 
 <head>
-    <title>MultipliAssignment one</title>
+    <title>Form Validation Assignment one</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
+    <h1>Form Validation</h1><br>
     <div class="content">
-        <h1>Multiplication Table</h1>
-        <form>
-            <input type="number" id="input_number" min="1" max="50">
-            <button type="button" onclick="createTable()">Create Table</button>
+
+      <form onsubmit='return validateForm()' action="message.html" method="POST">
+            <p>
+                <div class="form-group"><lable>First Name:</lable>
+            <input type="text" class="form-control" id="firstName" value="" autocomplete="off">
+            <span id="firstname" style="color:red"></span>
+            <br></div>
+            </p>
+            <p><div class="form-group"><lable>Last Name:</lable>
+            <input type="text" class="form-control" id="lastName" value="" autocomplete="off">
+            <span id="lastname" style="color:red"></span>
+            <br></div>
+            </p>
+            <p><div class="form-group">
+            <lable>Email Address</lable>
+            <input type="email" class="form-control" id="email" value="" autocomplete="off">
+            <span id="emailid" style="color:red"></span>
+            <br></div>
+            </p>
+            <p><div class="form-group"><lable>Password</lable>
+            <input type="password" class="form-control" id="password" value="" autocomplete="off">
+            <span id="pass" style="color:red"></span>
+            <br></div>
+            </p>
+            <p><div class="form-group"><lable>Confirm Password</lable>
+            <input type="password" class="form-control" id="confirmPassword" value="" autocomplete="off">
+            <span id="confirmpassword" style="color:red"></span><br></div></p>
+            <p><button style="background-color:green" class="button_css">Submit</button>
+            </p>
         </form>
     </div>
-    <script src="createTable.js"></script>
+    <script src="FormValidation.js"></script>
 </body>
 
 </html>

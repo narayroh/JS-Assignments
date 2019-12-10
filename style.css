@@ -1,5 +1,23 @@
 body {
-  color: blue;
-  max-width: 600px;
-  margin: auto;
+font: bold;
+max-width: 600px;
+margin: auto;
+}
+
+form {
+max-width: 200px;    
+}
+.button_css
+{
+	background-color: green;
+	color: white;
+	width: 150px;
+	height: 40px;
+}
+div.content {
+
+    text-align: left;
+}
+div.form-group {
+    text-align: left;
 }
